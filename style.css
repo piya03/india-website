@@ -1,0 +1,95 @@
+*, 
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+
+html {font-size: 1em;}
+body {
+  
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #333;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 5.063em;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 400;
+
+}
+h2 {font-size: 3.375em;}
+h3 {font-size: 2.25em;}
+h4 {font-size: 1.5em;}
+small, .font_small {font-size: 0.667em;}
+
+
+body {
+    background-color: #bfd4f3;
+}
+@media (min-width:768px){
+    .container{
+      max-width: 738px;
+    }
+  }
+  @media (min-width:1024px){
+    .container{
+      max-width: 990px;
+    }
+  }
+
+.primary-bg{
+    background-color: #eac2c2;
+    height: 200px;
+}
+.container{
+    padding: 1px 15px;
+    margin:0 auto;
+}
+.container h1{
+text-align: center;
+font-size: 60px;
+padding-top: 20px;
+}
+.main-nav{
+    font-size: 20px;
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 50px 0 20px;
+    padding: 10px;
+    text-align: center;
+}
+.main-nav a {
+    color:#FFF;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+}
+.main-nav a:after{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 250ms ease;
+}
+.main-nav a.active:after,
+.main-nav a:hover:after{
+  width: 100%;
+}
+.about-india{
+    font-size: 20px;
+}
+.about-india img{
+    width: 500px;
+}
